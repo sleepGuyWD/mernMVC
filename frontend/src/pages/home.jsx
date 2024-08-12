@@ -1,5 +1,6 @@
 import { useEffect , useState} from "react"
 import Card from "../components/card"
+import WorkoutForm from "../components/workoutform"
 
 function Home() {
 
@@ -25,6 +26,7 @@ function Home() {
           <Card key={workout._id} workout={workout}/>
         ))}
       </div>
+      <WorkoutForm/>
     </div>
   )
 }
